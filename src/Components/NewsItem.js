@@ -13,7 +13,7 @@ export class NewsItem extends Component {
               {title}
               <span
                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-                style={{ left: "90" }}
+                style={{  }}
               >
                 {source}
                 <span class="visually-hidden">unread messages</span>
@@ -23,6 +23,7 @@ export class NewsItem extends Component {
             <a
               href={newsURL}
               target="_blank"
+              rel="noreferrer"
               className="btn btn-sm btn-primary"
             >
               Read more
