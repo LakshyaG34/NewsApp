@@ -32,7 +32,7 @@ export class App extends Component {
         <Route exact path="/Business"><News setProgress={this.setProgress}key = "Business" pageSize={this.pageSize} country="in" category="Business"/></Route>
         <Route exact path="/Health"><News setProgress={this.setProgress}key = "Health" pageSize={this.pageSize} country="in" category="Health"/></Route>
         <Route exact path="/Science"><News setProgress={this.setProgress}key = "Science" pageSize={this.pageSize} country="in" category="Science"/></Route>
-        <Route exact path="/Education"><News setProgress={this.setProgress}key = "Education" pageSize={this.pageSize} country="in" category="Education"/></Route>
+        {/* <Route exact path="/Education"><News setProgress={this.setProgress}key = "Education" pageSize={this.pageSize} country="in" category="Education"/></Route> */}
         <Route exact path="/Sports"><News setProgress={this.setProgress}key = "Sports" pageSize={this.pageSize} country="in" category="Sports"/></Route>
         <Route exact path="/Entertainment"><News setProgress={this.setProgress}key = "Entertainment" pageSize={this.pageSize} country="in" category="Entertainment"/></Route>
         <Route exact path="/General"><News setProgress={this.setProgress}key = "General" pageSize={this.pageSize} country="in" category="General"/></Route>

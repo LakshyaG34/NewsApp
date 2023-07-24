@@ -70,11 +70,11 @@ export class Navbar extends Component {
                     Science
                   </Link>
                 </li>
-                <li classsName="nav-item">
+                {/* <li classsName="nav-item">
                   <Link className="nav-link" to="/Education">
                     Education
                   </Link>
-                </li>
+                </li> */}
                 <li classsName="nav-item">
                   <Link className="nav-link" to="/Sports">
                     Sports

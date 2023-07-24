@@ -1,21 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export class NewsItem extends Component {
   render() {
-    let { title, description, imageUrL, newsURL, author, date, source } =
+    let { title, description, imageUrl, newsURL, author, date, source } =
       this.props;
     return (
       <div>
         <div className="card" style={{ width: "18rem" }}>
-          <img
-            src={
-              !imageUrL
-                ? "https://static.toiimg.com/thumb/msid-101684371,width-1070,height-580,imgsize-33266,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
-                : imageUrL
-            }
-            className="card-img-top"
-            alt="..."
-          />
+        <img src={!imageUrl ? "https://fdn.gsmarena.com/imgroot/news/21/08/xiaomi-smart-home-india-annoucnements/-476x249w4/gsmarena_00.jpg" : imageUrl} className="card-img-top" alt="..." />
           <div className="card-body">
             <h5 className="card-title">
               {title}
