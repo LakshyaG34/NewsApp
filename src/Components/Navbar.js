@@ -55,37 +55,37 @@ const Navbar = () => {
                     </li>
                   </ul>
                 </li>
-                <li classsName="nav-item">
+                <li className="nav-item">
                   <Link className="nav-link" to="/Business">
                     Business
                   </Link>
                 </li>
-                <li classsName="nav-item">
+                <li className="nav-item">
                   <Link className="nav-link" to="/Health">
                     Health
                   </Link>
                 </li>
-                <li classsName="nav-item">
+                <li className="nav-item">
                   <Link className="nav-link" to="/Science">
                     Science
                   </Link>
                 </li>
-                {/* <li classsName="nav-item">
+                {/* <li className="nav-item">
                   <Link className="nav-link" to="/Education">
                     Education
                   </Link>
                 </li> */}
-                <li classsName="nav-item">
+                <li className="nav-item">
                   <Link className="nav-link" to="/Sports">
                     Sports
                   </Link>
                 </li>
-                <li classsName="nav-item">
+                <li className="nav-item">
                   <Link className="nav-link" to="/Entertainment">
                     Entertainment
                   </Link>
                 </li>
-                <li classsName="nav-item">
+                <li className="nav-item">
                   <Link className="nav-link" to="/General">
                     General
                   </Link>
