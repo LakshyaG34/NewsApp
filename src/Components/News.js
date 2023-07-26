@@ -44,8 +44,8 @@ const News = (props) => {
 
   return (
     <>
-      <h1 className="text-center" style={{ margin: "35px 0px" }}>
-        NewsMonkey - Top Headlines
+      <h1 className="text-center my-3" style={{ margin: "35px 0px" }}>
+        NewsApp - {props.category} Top Headlines
       </h1>
       {loading && <Spinner />}
       <InfiniteScroll
