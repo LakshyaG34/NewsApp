@@ -25,19 +25,22 @@ const News = (props) => {
     props.setProgress(100);
   };
   useEffect(() => {
-
     document.title = `${props.category}-NewsMonkey`;
     updateNews();
     // eslint-disable-next-line
-  },[])
+  }, []);
 
   const fetchMoreData = async () => {
-    const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=529beab108264e419985c1fee2123212&page=${page+1}&pageSize=${props.pageSize}`;
+    const url = `https://newsapi.org/v2/top-headlines?country=${
+      props.country
+    }&category=${props.category}&apiKey=529beab108264e419985c1fee2123212&page=${
+      page + 1
+    }&pageSize=${props.pageSize}`;
     setPage(page + 1);
 
     let data = await fetch(url);
     let parsedData = await data.json();
-  
+
     setArticles(articles.concat(parsedData.articles));
     setTotalResults(parsedData.totalResults);
   };
@@ -47,7 +50,7 @@ const News = (props) => {
       <h1 className="text-center my-3" style={{ margin: "35px 0px" }}>
         NewsApp - {props.category} Top Headlines
       </h1>
-      {loading && <Spinner />}
+      {loading && articles && <Spinner />}
       <InfiniteScroll
         dataLength={articles.length}
         next={fetchMoreData}
@@ -56,7 +59,7 @@ const News = (props) => {
       >
         <div className="container">
           <div className="row">
-            {articles.map((element) => {
+            {articles?.map((element) => {
               return (
                 <div className="col-md-4" key={element.url}>
                   <NewsItem
